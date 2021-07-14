@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## ALC Reasoner
 
-Realization of a reasoner that takes as input a concept (ALC), which is provided as input through a serialization of OWL/OWL (remember that owl-APIs take serializations and automatically create the Java data structures needed for the computation), which it returns true, if the concept is satisfiable, or false, if it is unsatisfiable.
+Realization of a reasoner that takes as input a concept (ALC), which is provided as input through a serialization of OWL/OWL2 (remember that owl-APIs take serializations and automatically create the Java data structures needed for the computation), which it returns true, if the concept is satisfiable, or false, if it is unsatisfiable.
 
 The reasoner is PSPACE (i.e. use at least those forms of visits in depths that release memory, so that you are not in an EXPSPACE context).
 Algorithm used is Dependency-directed backtracking.
