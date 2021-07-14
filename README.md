@@ -86,7 +86,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/0xUrbz/ALC-Reasoner.svg?style=for-the-badge
 [issues-url]: https://github.com/0xUrbz/ALC-Reasoner/issues
 [license-shield]: https://img.shields.io/github/license/0xUrbz/ALC-Reasoner.svg?style=for-the-badge
-[license-url]: https://github.com/0xUrbz/ALC-Reasoner/blob/master/LICENSE.md
+[license-url]: https://github.com/0xUrbz/ALC-Reasoner/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://linkedin.com/in/luigiurbano
 [linkedin-url2]: https://www.linkedin.com/in/urbanomarco/
