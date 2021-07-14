@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#"
+     xml:base="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006">
+        <owl:versionIRI rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#R -->
+
+    <owl:ObjectProperty rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#R"/>
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#S -->
+
+    <owl:ObjectProperty rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#S"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A -->
+
+    <owl:Class rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A"/>
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A2 -->
+
+    <owl:Class rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A2"/>
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B -->
+
+    <owl:Class rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B"/>
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B2 -->
+
+    <owl:Class rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B2"/>
+    
+
+
+    <!-- http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#alc_concept -->
+
+    <owl:Class rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#alc_concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A"/>
+                            <rdf:Description rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A2"/>
+                            <rdf:Description rdf:about="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B2"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#B"/>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#R"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#S"/>
+                                        <owl:allValuesFrom rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#R"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#S"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://wwhttp://www.semanticweb.org/urbanoreasoner/ontologies/2020/Giugno2006#A"/>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#"
+     xml:base="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#R -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#R"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#B"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#C"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#D"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#alc_concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#alc_concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#B"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#C"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#B"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A"/>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#D"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A"/>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#R"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#A"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#C"/>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#R"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/UNIROMA_01#D"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

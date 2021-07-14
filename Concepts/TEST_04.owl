@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#"
+     xml:base="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#R -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#R"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#S -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#S"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B"/>
+    
+
+
+    <!-- http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#alc_concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#alc_concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A"/>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#R"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A"/>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#S"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A"/>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#S"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B"/>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#R"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#A"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#S"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#R"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://www.semanticweb.org/urbanoreasoner/ontologies/2020/TEST_04#B"/>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
