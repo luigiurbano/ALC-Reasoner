@@ -3,7 +3,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![GPL License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url1]
 [![LinkedIn][linkedin-shield]][linkedin-url2]
 
@@ -72,7 +72,7 @@ It is hoped that anyone who wants to implement a better version of the project c
 <!-- LICENSE -->
 ## License
 
-Distributed under the GPL-3.0 License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -86,7 +86,7 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/0xUrbz/ALC-Reasoner.svg?style=for-the-badge
 [issues-url]: https://github.com/0xUrbz/ALC-Reasoner/issues
 [license-shield]: https://img.shields.io/github/license/0xUrbz/ALC-Reasoner.svg?style=for-the-badge
-[license-url]: https://github.com/0xUrbz/ALC-Reasoner/blob/master/LICENSE
+[license-url]: https://github.com/0xUrbz/ALC-Reasoner/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://linkedin.com/in/luigiurbano
 [linkedin-url2]: https://www.linkedin.com/in/urbanomarco/
